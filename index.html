@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Callum Woodford, AI Developer. Minimal career site."
+    >
+    <title>Callum Woodford | AI Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <aside class="profile-rail" aria-label="Career history">
+        <div class="identity">
+          <h1>Callum Woodford</h1>
+          <p class="role">AI Developer</p>
+          <nav class="social-links" aria-label="Social links">
+            <a href="https://x.com/calwoodford" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.7 10.6 21.2 2h-1.8l-6.5 7.4L7.7 2h-6l7.9 11.3L1.7 22h1.8l6.9-7.8L15.9 22h6L13.7 10.6Zm-2.4 2.7-.8-1.1L4.2 3.4h2.7l5.1 7.1.8 1.1 6.6 9.2h-2.7l-5.4-7.5Z"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/calphilipw/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5.4 8.7H2.1V22h3.3V8.7ZM3.8 2C2.7 2 2 2.8 2 3.8s.7 1.8 1.8 1.8c1 0 1.8-.8 1.8-1.8S4.8 2 3.8 2Zm18 12.4c0-4-2.1-5.9-5-5.9-2.3 0-3.3 1.3-3.9 2.1h-.1V8.7H9.6V22h3.3v-6.6c0-1.7.3-3.4 2.5-3.4 2.1 0 2.1 2 2.1 3.5V22h3.3v-7.6h1Z"></path>
+              </svg>
+            </a>
+          </nav>
+        </div>
+
+        <section class="roles" aria-labelledby="career-title">
+          <h2 id="career-title" class="visually-hidden">Career history</h2>
+          <ol>
+            <li>
+              <button
+                class="role-button"
+                type="button"
+                data-company="Gateley"
+                data-position="Artificial Intelligence Developer"
+                aria-controls="role-detail"
+                aria-expanded="false"
+              >
+                <span class="company">Gateley</span>
+                <span class="position">Artificial Intelligence Developer</span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="role-button"
+                type="button"
+                data-company="SCC"
+                data-position="Artificial Intelligence &amp; Innovation Consultant"
+                aria-controls="role-detail"
+                aria-expanded="false"
+              >
+                <span class="company">SCC</span>
+                <span class="position">Artificial Intelligence &amp; Innovation Consultant</span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="role-button"
+                type="button"
+                data-company="Education"
+                data-position="Msc, BA"
+                aria-controls="role-detail"
+                aria-expanded="false"
+              >
+                <span class="company">Education</span>
+                <span class="position">Msc, BA</span>
+              </button>
+            </li>
+          </ol>
+        </section>
+      </aside>
+
+      <section class="content-pane" aria-label="Role details">
+        <article id="role-detail" class="role-detail" aria-live="polite" aria-atomic="true">
+          <h2 data-detail-company></h2>
+          <p data-detail-position></p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
